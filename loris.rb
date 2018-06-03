@@ -10,3 +10,7 @@ get '/' do
   data = JSON.parse(response)
   erb :index, locals: {data: data}
 end
+
+get 'pull' do
+  `git pull`
+end
