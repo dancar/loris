@@ -11,5 +11,14 @@
         <br/>
         <% end %>
       </OL>
+      Groups:
+            <OL>
+        <% data["groups"].each do |stadium| %>
+        <LI>
+           <%= groups["name"] %>
+        </LI>
+        <br/>
+        <% end %>
+      </OL>
     </body>
 </html>
