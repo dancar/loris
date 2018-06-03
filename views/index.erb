@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Loris</title>
+    <body>
+      Stadiums:
+      <OL>
+        <% data["stadiums"].each do |stadium| %>
+        <LI>
+           <%= stadium["name"] %>
+        </LI>
+        <br/>
+        <% end %>
+      </OL>
+    </body>
+</html>
