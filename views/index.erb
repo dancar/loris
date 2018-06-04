@@ -18,16 +18,16 @@
        <table>
         <tbody>
             <tr>
-                <th>Product</th>
-                <th>Duration</th>
-                <th>Unit Price</th>
+                <th>id</th>
+                <th>name</th>
+
 
             </tr>
             <tr>
-               <% data["stadiums"].each do |stadium| %>
-                <td>  <%= stadium["name"] %></td>
-                <td><%= stadium["city"] %></td>
-                <td><%= stadium["image"] %></td>
+               <% data["groups"]["a].each do |group| %>
+                <td>  <%= groups["id"] %></td>
+                <td><%= groups["name"] %></td>
+
 
             </tr>
                   <% end %>
