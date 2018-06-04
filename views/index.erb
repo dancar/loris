@@ -14,5 +14,24 @@
         <br/>
         <% end %>
       </OL>
+      </br>
+       <table class="table table-striped">
+        <tbody>
+            <tr class="header-row hidden-xs">
+                <th>Product</th>
+                <th>Duration</th>
+                <th>Unit Price</th>
+
+            </tr>
+            <tr>
+               <% data["stadiums"].each do |stadium| %>
+                <td>  <%= stadium["name"] %></td>
+                <td><%= stadium["city"] %></td>
+                <td><%= stadium["image"] %></td>
+
+            </tr>
+        </tbody>
+    </table>
+      
     </body>
 </html>
